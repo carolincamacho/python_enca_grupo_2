@@ -13,3 +13,19 @@ def listas():
 print(listas())
 
 
+
+clave=1234
+intentos=1
+
+pin=int(input("ingrese su clave"))
+
+for intentos in range(1,4):
+    pin=int(input("clave erronea, intente de nuevo"))
+    if pin == clave:
+        print("ingreso exitoso")
+    else:
+        print("clave incorrecta")
+    intentos=intentos+1
+    break
+
+
